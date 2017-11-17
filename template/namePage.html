@@ -1,0 +1,16 @@
+{% extends "index.html" %}
+{% block content %}
+    <div>
+        <h1>DESTROY DESTROY DESTROY </h1>
+        <p>WIZARD MASTER MR FLUFF HAS HEARD YOUR CALL</p>
+        <p>But first some boiler plate:</p>
+        <p>Mr Fluff has determined your name to be : {{userName}}</p>
+        <p>Mr Fluff has also determined your email to be : {{email}}</p>
+        <p>Do not concern yourself with state, but it was: {{state}}</p>
+    </div>
+    <audio id="kittenNoises" src="/static/img/kittens.mp3" preload="auto"></audio>
+    <script>
+        var sample = document.getElementById("kittenNoises");
+        sample.play()
+    </script>
+{% endblock %}}
